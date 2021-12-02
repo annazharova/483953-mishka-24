@@ -10,7 +10,7 @@
       <img class="header__logo-image" src="img/logo.svg" width="86" height="35" alt="Магазин Мишка">
     </a>
     <nav class="main-navigation">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -58,7 +58,7 @@
         </ul>
       </div>
     </section>
-    <article>
+    <article class="article">
       <h2 class="article-title">Вязаные корзинки</h2>
       <p class="promo-product">Товар недели</p>
       <p class="text article__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
@@ -94,7 +94,7 @@
     </article>
     <section class="about-us">
       <h2 class="subtitle">Коротко о нас</h2>
-      <ul class="about-us-list">
+      <ul class="about-us__list">
         <li class="about-us__item">Экологически чистые материалы</li>
         <li class="about-us__item">Скандинавский стиль по российской цене</li>
         <li class="about-us__item">Увеличивает лайки на фотографиях</li>
@@ -108,31 +108,29 @@
         <h2 class="subtitle">Отзывы</h2>
         <div class="slider__list">
           <div class=" slider__item">
-            <blockquote class="reviews__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.</p>
-              <p class="reviews__text">В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <div class="reviews__author-info">
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <p class="reviews__link">@misssssiskras</p>
+            <blockquote class="reviews__item slide">
+              <p class="slide__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.</p>
+              <p class="slide__text">В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="slide__author-info">
+                <cite class="slide__author-name">Анастасия Красильникова</cite>
+                <p class="slide__link">@misssssiskras</p>
               </div>
             </blockquote>
           </div>
         </div>
-        <div class="buttons-wrapper">
-          <p class="reviews__arrows">
-            <button class="slider__arrow" type="button">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-              </svg>
-              <span class="visually-hidden">Предыдущий</span>
-            </button>
-            <button class="slider__arrow" type="button">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-              </svg>
-              <span class="visually-hidden">Следующий</span>
-            </button>
-          </p>
+        <div class="buttons-wrapper slider__arrows">
+          <button class="slider__arrow" type="button">
+            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="slider__arrow" type="button">
+            <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Следующий</span>
+          </button>
         </div>
       </div>
       <button class="button" type="button">Написать</button>
@@ -163,6 +161,7 @@
   </main>
   <footer>
     <section class="social">
+      <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul class="social__list">
         <li class="social__item instagram">
           <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
