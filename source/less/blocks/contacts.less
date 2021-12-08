@@ -3,6 +3,11 @@
 .contacts__list {
   display: grid;
   grid-template-rows: 40px auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .contacts__item {

@@ -1,0 +1,30 @@
+.slider {}
+
+.slider__list {
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+  }
+}
+
+.slider__item {}
+
+.slider__arrows {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: -1 / -2;
+    justify-content: end;
+  }
+}
+
+.slider__arrow {
+  height: 52px;
+  width: 130px;
+  background: @color-bg;
+  border: 1px solid @color-ghost;
+  box-sizing: border-box;
+  padding: 0;
+}

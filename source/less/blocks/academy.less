@@ -11,7 +11,10 @@
 
 .academy__container {
   width: min-content;
-  margin: auto;
   padding-top: 30px;
   padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }

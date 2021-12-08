@@ -6,9 +6,19 @@
 
 .catalog-item__link {
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
 }
 
-.catalog-item__img {}
+.catalog-item__img {
+  @media (min-width: @tablet-width) {
+   grid-row: 1 / -1;
+  }
+}
 
 .catalog-item__title {
   font-weight: bold;
@@ -30,7 +40,14 @@
   font-size: 15px;
   line-height: 24px;
   color: @color-text;
+  padding-left: 28px;
   padding-bottom: 26px;
   padding-top: 40px;
   display: inline-flex;
+}
+
+.catalog-item__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

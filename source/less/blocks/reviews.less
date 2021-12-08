@@ -1,0 +1,29 @@
+.reviews {}
+
+.reviews__wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__button {
+  width: 260px;
+  margin-top: 42px;
+  margin-bottom: 39px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media (min-width: @tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: -1 / 2;
+  }
+}

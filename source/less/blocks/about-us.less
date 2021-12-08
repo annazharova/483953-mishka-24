@@ -3,6 +3,12 @@
 .about-us__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
 }
 
 .about-us__item {

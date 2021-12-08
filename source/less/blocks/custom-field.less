@@ -1,4 +1,11 @@
-.custom-field {}
+.custom-field {
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: baseline;
+  }
+}
 
 .custom-field__input {
   border: none;
