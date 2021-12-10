@@ -8,9 +8,7 @@
   </head>
   <body class="page__body">
   <header class="header container">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo.svg" alt="Магазин Мишка">
-    </a>
+
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Закрыть меню</span>
@@ -20,6 +18,11 @@
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__index">
+            <a class="main-navigation__logo" href="index.html">
+              <img class="main-navigation__logo-image" src="img/logo.svg" alt="Магазин Мишка">
+            </a>
+          </li>
           <li class="main-navigation__item main-navigation__catalog">
             <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -47,26 +50,27 @@
           <li class="main-navigation__item main-navigation__sale">
             <a class="main-navigation__link" href="#">Распродажа</a>
           </li>
+          <li class="main-navigation__item main-navigation__delivery">
+            <span>Бесплатная доставка по России</span>
+          </li>
         </ul>
-
       </div>
     </nav>
-    <span class="header__aside">Бесплатная доставка по России</span>
   </header>
   <main class="page__main">
     <h1 class="title__index container">Милые штуки ручной работы для дома</h1>
     <section class="category">
       <h2 class="visually-hidden">Виды товаров</h2>
       <div class="category__wrapper">
-        <ul class="category__list">
+        <ul class="category__list container">
           <li class="category__item">
             <a class="category__link" href="#">
-              <span class="category__text container">Предметы интерьера</span>
+              <span class="category__text">Предметы интерьера</span>
             </a>
           </li>
           <li class="category__item">
             <a class="category__link" href="#">
-              <span class="category__text container">Детские игрушки</span>
+              <span class="category__text">Детские игрушки</span>
             </a>
           </li>
         </ul>
@@ -148,7 +152,7 @@
             <span class="visually-hidden">Следующий</span>
           </button>
         </div>
-        <div class="center">
+        <div class="reviews__button-container">
           <a class="reviews__button button" href="#">Написать</a>
         </div>
       </div>
@@ -161,7 +165,7 @@
             e-mail:
           </dt>
           <dd class="contacts__parameter-value">
-            <a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </dd>
         </div>
         <div class="contacts__item">

@@ -5,10 +5,10 @@
 }
 
 .reviews__wrapper {
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 130px;
   }
 }
 
@@ -25,10 +25,20 @@
   align-items: center;
   justify-content: center;
 
-
   @media (min-width: @tablet-width) {
     grid-row: 1 / 2;
     grid-column: -1 / 2;
+    justify-self: end;
+    width: 175px;
+  }
+}
+
+.reviews__button-container {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: unset;
     justify-self: end;
   }
 }

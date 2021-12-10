@@ -4,9 +4,12 @@
 
 .category__list {
   list-style: none;
-  padding: 0;
+  @media (min-width: @mobile-width-only) {
+    padding: 0;
+  }
 
   @media (min-width: @tablet-width) {
+    padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -14,6 +17,7 @@
 
 .category__item {
   background-color: @color-main;
+  padding-left: 36px;
 
   &:last-child {
     background-color: @color-main-dark;
@@ -33,7 +37,5 @@
 }
 
 .category__text {
-  @media (min-width: @tablet-width) {
-    width: min-content;
-  }
+  width: min-content;
 }
