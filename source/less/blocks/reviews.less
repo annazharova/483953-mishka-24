@@ -1,4 +1,8 @@
-.reviews {}
+.reviews {
+  @media (min-width: @desktop-width) {
+    padding-left: 175px;
+  }
+}
 
 .reviews__wrapper {
 
@@ -25,5 +29,6 @@
   @media (min-width: @tablet-width) {
     grid-row: 1 / 2;
     grid-column: -1 / 2;
+    justify-self: end;
   }
 }
