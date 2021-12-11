@@ -1,4 +1,4 @@
-.slide {}
+// .slide {}
 
 .slide__text {
   color: @color-text-light;
@@ -6,11 +6,18 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .slide__author-info {
-  margin-top: 33px;
-  margin-bottom: 31px;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .slide__author-name {
