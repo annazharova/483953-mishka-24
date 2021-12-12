@@ -1,0 +1,24 @@
+.footer-index {
+  background-color: @color-bg-footer;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 143px;
+  }
+}
+
+.footer-index__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.footer-index__logo-image {
+  width: 101px;
+  height: 34px;
+}
