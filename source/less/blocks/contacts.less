@@ -1,4 +1,9 @@
 .contacts {
+  background-image: url("../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position-y: 0;
+  padding-top: 30px;
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 460px auto;
@@ -11,12 +16,21 @@
     box-sizing: border-box;
     padding-left: 80px;
     padding-bottom: 105px;
+
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    width: 100%;
   }
 }
 
 .contacts__list {
   display: grid;
   grid-template-rows: 40px auto;
+  row-gap: 26px;
+  padding-bottom: 62px;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     display: flex;

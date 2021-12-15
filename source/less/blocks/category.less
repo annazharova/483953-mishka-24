@@ -1,6 +1,23 @@
-// .category {}
+.category {
+  position: relative;
+  background-color: @color-bg-dark;
 
-// .category__wrapper {}
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position-y: 10px;
+      top: 92px;
+      bottom: -1px;
+      width: 100%;
+    }
+  }
+}
+
+.category__wrapper {
+}
 
 .category__list {
   list-style: none;
@@ -10,11 +27,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 119px;
   }
 }
+
 
 .category__item {
   background-color: @color-main;

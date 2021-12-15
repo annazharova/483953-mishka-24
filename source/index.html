@@ -72,7 +72,9 @@
   </script>
 
   <main class="page__main">
-    <h1 class="title__index container">Милые штуки ручной работы для дома</h1>
+    <div class="title-index__wrapper">
+      <h1 class="title__index container">Милые штуки ручной работы для дома</h1>
+    </div>
     <section class="category">
       <h2 class="visually-hidden">Виды товаров</h2>
       <div class="category__wrapper">
@@ -96,7 +98,23 @@
         <p class="article__promo">Товар недели</p>
       </div>
       <p class="article__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-      <dl class="article__list">
+
+      <table class="article__list">
+        <tr class="article__item">
+          <td class="article__parameter-name">Цвет:</td>
+          <td class="article__parameter-value">тиффани/серый</td>
+        </tr>
+        <tr class="article__item">
+          <td class="article__parameter-name">Диаметр:</td>
+          <td class="article__parameter-value">25 см</td>
+        </tr>
+        <tr class="article__item">
+          <td class="article__parameter-name">Высота:</td>
+          <td class="article__parameter-value">15 см</td>
+        </tr>
+      </table>
+
+      <!-- <dl class="article__list">
         <div class="article__item">
           <dt class="article__parameter-name">
             Цвет:
@@ -121,7 +139,7 @@
             15 см
           </dd>
         </div>
-      </dl>
+      </dl> -->
       <img class="article__image" src="img/basket.png" alt="Вязаные корзинки">
       <p class="article__price">Цена: <span>990 руб.</span></p>
       <p class="article__button-container"><button class="button article__button" type="button">Заказать</button></p>
