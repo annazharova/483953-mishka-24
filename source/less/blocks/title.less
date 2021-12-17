@@ -17,6 +17,20 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    min-height: 272px;
+    margin-top: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position-y: 250px;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
   }
 }
 
