@@ -1,6 +1,27 @@
 .about-us {
+  background-image: url("../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  background-position-y: 0;
+  padding-top: 10px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-left: 175px;
+    padding-left: 195px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 90px;
   }
 }
 
