@@ -17,5 +17,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 88px;
+    // position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 88px;
+      width: 100%;
+      border-bottom: 1px solid @color-lines;
+    }
   }
 }
