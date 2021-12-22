@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="header container">
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
@@ -20,10 +20,10 @@
               </a>
             </li>
             <li class="main-navigation__item main-navigation__catalog">
-              <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-navigation__link" href="catalog.html"><span class="main-navigation__text">Каталог товаров</span></a>
             </li>
             <li class="main-navigation__item main-navigation__form">
-              <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+              <a class="main-navigation__link" href="form.html"><span class="main-navigation__text">Вязание на заказ</span></a>
             </li>
             <li class="main-navigation__item main-navigation__search">
               <button class="main-navigation__button main-navigation__link" type="button">
@@ -41,35 +41,18 @@
                 <span class="empty-cart">Корзина: пока пуста</span></button>
             </li>
             <li class="main-navigation__item main-navigation__new">
-              <a class="main-navigation__link main-navigation__mod-link " href="#">Новые поступления</a>
+              <a class="main-navigation__link main-navigation__mod-link" href="#"><span class="main-navigation__text">Новые поступления</span></a>
             </li>
             <li class="main-navigation__item main-navigation__sale">
-              <a class="main-navigation__link main-navigation__mod-link " href="#">Распродажа</a>
+              <a class="main-navigation__link main-navigation__mod-link " href="#"><span class="main-navigation__text">Распродажа</span></a>
             </li>
             <li class="main-navigation__item main-navigation__delivery">
-              <span>Бесплатная доставка по России</span>
+              <span class="main-navigation__text">Бесплатная доставка по России</span>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-
-    <script>
-      var navMain = document.querySelector('.main-navigation');
-      var navToggle = document.querySelector('.main-navigation__toggle');
-
-      navMain.classList.remove('main-navigation--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-navigation--closed')) {
-          navMain.classList.remove('main-navigation--closed');
-          navMain.classList.add('main-navigation--opened');
-        } else {
-          navMain.classList.add('main-navigation--closed');
-          navMain.classList.remove('main-navigation--opened');
-        }
-      });
-    </script>
 
   <main class="page__main">
     <h1 class="title">Каталог товаров</h1>

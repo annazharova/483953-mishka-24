@@ -22,8 +22,7 @@
     display: grid;
     grid-template-columns: 60px auto;
     column-gap: 120px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 50px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,18 +44,7 @@
   }
 }
 
-.form__title > legend {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 68px;
-    right: -223px;
-    top: 7px;
-    border-bottom: 1px solid @color-main;
-  }
-}
+// .form__title > legend {}
 
 .form__list {
   list-style: none;
