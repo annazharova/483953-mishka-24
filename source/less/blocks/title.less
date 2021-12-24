@@ -8,15 +8,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 56px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position-y: 155px;
+      top: 56px;
+      bottom: 0;
+      width: 100%;
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    min-height: 272px;
+    // position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-position-y: 250px;
+      top: 56px;
+      bottom: 0;
+      width: 100%;
+    }
   }
 }
 
