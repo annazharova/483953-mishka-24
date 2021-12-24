@@ -20,7 +20,11 @@
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__index main-navigation__item--active">
             <a class="main-navigation__logo" href="index.html">
-              <img class="main-navigation__logo-image" src="img/logo.svg" alt="Магазин Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                <img class="main-navigation__logo-image" src="img/logo.svg" alt="Магазин Мишка">
+              </picture>
             </a>
           </li>
           <li class="main-navigation__item main-navigation__catalog">
@@ -99,7 +103,13 @@
           <td class="article__parameter-value">15 см</td>
         </tr>
       </table>
-      <img class="article__image" src="img/basket.png" alt="Вязаные корзинки">
+      <div class="article__picture">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/basket-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/basket-tablet.png">
+          <img class="article__image" src="img/basket.png" alt="Вязаные корзинки">
+        </picture>
+      </div>
       <p class="article__price">Цена: <span>990 руб.</span></p>
       <p class="article__button-container"><button class="button article__button" type="button">Заказать</button></p>
     </article>
