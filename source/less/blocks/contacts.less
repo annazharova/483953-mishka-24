@@ -4,6 +4,13 @@
   background-position-y: 0;
   padding-top: 30px;
 
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 460px auto;
