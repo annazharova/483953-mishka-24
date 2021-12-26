@@ -20,7 +20,11 @@
           <ul class="main-navigation__list">
             <li class="main-navigation__item main-navigation__index main-navigation__item--active">
               <a class="main-navigation__logo" href="index.html">
-                <img class="main-navigation__logo-image" src="img/logo.svg" alt="Магазин Мишка">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                  <img class="main-navigation__logo-image" src="img/logo.svg" alt="Магазин Мишка">
+                </picture>
               </a>
             </li>
             <li class="main-navigation__item main-navigation__catalog">
@@ -64,7 +68,11 @@
       <ul class="catalog__list">
         <li class="catalog-item">
           <a class="catalog-item__link-img" href="#">
-            <img class="catalog-item__img" src="img/products/hare.png" alt="">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/products/hare-desktop.png 1x, img/products/hare-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/hare-tablet.png, img/products/hare-tablet@2x.png 2x">
+              <img class="catalog-item__img" src="img/products/hare.png" srcset="img/products/hare@2x.png 2x" alt="">
+            </picture>
           </a>
           <a class="catalog-item__link-text" href="#">
             <div class="catalog-item__text-wrap">
@@ -83,7 +91,11 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item__link-img" href="#">
-            <img class="catalog-item__img" src="img/products/basket.png" alt="">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/products/basket-desktop.png 1x, img/products/basket-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/basket-tablet.png, img/products/basket-tablet@2x.png 2x">
+              <img class="catalog-item__img" src="img/products/basket.png" srcset="img/products/basket@2x.png 2x" alt="">
+            </picture>
           </a>
           <a class="catalog-item__link-text" href="#">
             <div class="catalog-item__text-wrap">
@@ -102,7 +114,11 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item__link-img" href="#">
-            <img class="catalog-item__img" src="img/products/toys-basket.png" alt="">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/products/toys-basket-desktop.png 1x, img/products/toys-basket-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/products/toys-basket-tablet.png, img/products/toys-basket-tablet@2x.png 2x">
+              <img class="catalog-item__img" src="img/products/toys-basket.png" srcset="img/products/toys-basket@2x.png 2x" alt="">
+            </picture>
           </a>
           <a class="catalog-item__link-text" href="#">
             <div class="catalog-item__text-wrap">
@@ -124,7 +140,11 @@
     <article class="video">
       <h2 class="video__title">Процесс производства</h2>
       <div class="video__container">
-        <img class="video__image" src="img/video.png" alt="Вязаная корзинка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.png">
+          <img class="video__image" src="img/video.png" alt="Вязаная корзинка">
+        </picture>
         <button class="video__button" type="button">
           <span class="visually-hidden">Запустить видео</span>
           <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,5 +197,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>
