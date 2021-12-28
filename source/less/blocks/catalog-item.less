@@ -19,6 +19,14 @@
     margin-right: 25px;
     margin-left: 25px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-item__link-img {
@@ -79,6 +87,14 @@
     line-height: 24px;
     max-width: 230px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-item__description {
@@ -138,4 +154,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover path {
+    fill: @color-main;
+    opacity: 1;
+  }
+
+  &:active path {
+    fill: @color-main;
+    opacity: 0.3;
+  }
 }
