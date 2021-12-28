@@ -15,19 +15,6 @@
   font-size: 17px;
   line-height: 18px;
   color: @color-text-light-opacity;
-
-  &:hover {
-    box-shadow: inset 0 -2px 0 @color-main;
-  }
-
-  &:active {
-    color: @color-text-light;
-    box-shadow: inset 0 -2px 0 @color-main;
-  }
-}
-
-.form__item:hover .form__icon path {
-  fill: @color-main;
 }
 
 .custom-field__text {
@@ -48,4 +35,14 @@
   font-size: 17px;
   line-height: 18px;
   padding: 17px;
+  color: @color-text-opacity;
+
+  &:hover {
+    border: 2px solid @color-main;
+  }
+
+  &:active {
+    border: 2px solid @color-main;
+    color: @color-text;
+  }
 }
