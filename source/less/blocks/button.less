@@ -1,5 +1,5 @@
 .button {
-  background: @color-bg;
+  background-color: @color-bg;
   border: 2px solid @color-text-light;
   box-sizing: border-box;
   color: @color-text-light;
@@ -10,4 +10,14 @@
   line-height: 20px;
   display: block;
   cursor: pointer;
+
+  &:hover {
+    background-color: @color-text-light;
+    color: @color-bg;
+  }
+
+  &:active {
+    background-color: @color-text-light;
+    color: @color-bg-opacity;
+  }
 }
