@@ -7,16 +7,6 @@
   border: none;
   padding-left: 30px;
   padding-right: 30px;
-  // position: relative;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 10px;
-  //   right: 10px;
-  //   top: 10px;
-  //   border-bottom: 1px solid @color-main;
-  // }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -44,8 +34,6 @@
   }
 }
 
-// .form__title > legend {}
-
 .form__list {
   list-style: none;
   padding: 0;
@@ -65,6 +53,28 @@
 
 .form__item {
   padding-bottom: 22px;
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+
+.form__item:hover .form__icon path {
+  fill: @color-main;
+}
+
+.form__item:active .form__icon path {}
+
+.form__item:hover .custom-field__input {
+  box-shadow: inset 0 -2px 0 @color-main;
+}
+
+.form__item:active .custom-field__input {
+  color: @color-text-light;
+  box-shadow: inset 0 -2px 0 @color-main;
 }
 
 .form__note {
