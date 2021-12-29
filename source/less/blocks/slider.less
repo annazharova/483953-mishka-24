@@ -1,13 +1,9 @@
-// .slider {}
-
 .slider__list {
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
     grid-row: 2 / 4;
   }
 }
-
-// .slider__item {}
 
 .slider__arrows {
   display: flex;
@@ -28,11 +24,23 @@
   padding: 0;
   cursor: pointer;
 
-  &:hover path {
+  &:first-of-type {
+    background-image: url("../img/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-of-type {
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }

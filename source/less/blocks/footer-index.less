@@ -23,13 +23,14 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding: 20px;
 
-    &:hover path {
+    &:hover .footer-index__icon {
       fill: @color-main-dark-hover;
       opacity: 1;
     }
 
-    &:active path {
+    &:active .footer-index__icon {
       fill: @color-main-dark-hover;
       opacity: 0.3;
     }
@@ -39,4 +40,12 @@
 .footer-index__logo-image {
   width: 101px;
   height: 34px;
+}
+
+.footer-index__icon {
+  fill: @color-text;
+}
+
+.footer-index__academy {
+  fill: @color-main;
 }
