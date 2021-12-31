@@ -29,8 +29,18 @@
   display: inline-block;
   width: max-content;
 
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    position: absolute;
+    padding-top: 45px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 97px;
+  }
+
+  &--mod {
+    padding-top: 20px;
   }
 }
 
@@ -38,6 +48,10 @@
   list-style: none;
   padding: 0;
   padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+  }
 }
 
 .form__checkbox {
@@ -53,12 +67,16 @@
 
 .form__item {
   padding-bottom: 22px;
-  position: relative;
+
+  &--mod {
+    position: relative;
+    grid-column: 2 / 3;
+  }
 }
 
 .form__icon {
   position: absolute;
-  bottom: 30px;
+  bottom: 17px;
   right: 10px;
   opacity: 0.2;
 }
@@ -77,6 +95,24 @@
 }
 
 .form__item:active .custom-field__input {
+  color: @color-text-light;
+  box-shadow: inset 0 -2px 0 @color-main;
+}
+
+.form__item--mod:hover .form__icon {
+  fill: @color-main;
+  opacity: 1;
+}
+
+.form__item--mod:active .form__icon {
+  fill: @color-main;
+}
+
+.form__item--mod:hover .custom-field__input {
+  box-shadow: inset 0 -2px 0 @color-main;
+}
+
+.form__item--mod:active .custom-field__input {
   color: @color-text-light;
   box-shadow: inset 0 -2px 0 @color-main;
 }
