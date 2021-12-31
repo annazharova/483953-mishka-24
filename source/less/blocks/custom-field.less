@@ -10,10 +10,11 @@
   border: none;
   padding-bottom: 17px;
   padding-top: 17px;
-  box-shadow: inset 0 -2px 0 #000000;
+  box-shadow: inset 0 -2px 0 @color-text;
   width: 100%;
   font-size: 17px;
   line-height: 18px;
+  color: @color-text-light-opacity;
 }
 
 .custom-field__text {
@@ -34,4 +35,14 @@
   font-size: 17px;
   line-height: 18px;
   padding: 17px;
+  color: @color-text-opacity;
+
+  &:hover {
+    border: 2px solid @color-main;
+  }
+
+  &:active {
+    border: 2px solid @color-main;
+    color: @color-text;
+  }
 }
