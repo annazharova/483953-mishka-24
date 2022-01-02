@@ -14,7 +14,17 @@
   width: 100%;
   font-size: 17px;
   line-height: 18px;
-  color: @color-text-light-opacity;
+
+  &::placeholder {
+    color: @color-text-light-opacity;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
 }
 
 .custom-field__text {
@@ -24,6 +34,11 @@
   line-height: 18px;
   display: block;
   padding-right: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .custom-field__textarea {
@@ -35,14 +50,24 @@
   font-size: 17px;
   line-height: 18px;
   padding: 17px;
-  color: @color-text-opacity;
+  color: @color-text;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+
+  &::placeholder {
+    color: @color-text-light-opacity;
+    font-size: 17px;
+    line-height: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
 
   &:hover {
     border: 2px solid @color-main;
-  }
-
-  &:active {
-    border: 2px solid @color-main;
-    color: @color-text;
   }
 }

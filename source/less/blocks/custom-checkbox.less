@@ -40,11 +40,6 @@
   background-color: transparent;
 }
 
-// .custom-checkbox > input:active:not(:disabled) + span::before {
-//   border-color: @color-text-light;
-//   opacity: 0.3;
-// }
-
 .custom-checkbox > input:not(:disabled) + span:active::before {
   border-color: @color-text-light-opacity;
 }
@@ -66,4 +61,8 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
 }
