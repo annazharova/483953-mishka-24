@@ -24,7 +24,7 @@
   border: none;
   display: block;
   position: absolute;
-  padding: 30px;
+  padding: 40px;
   height: 20px;
   width: 20px;
   right: 0;
@@ -43,7 +43,7 @@
   border: none;
   display: block;
   position: absolute;
-  padding: 30px;
+  padding: 40px;
   height: 20px;
   width: 20px;
   right: 0;
@@ -87,14 +87,14 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-rows: minmax(88px, auto) auto;
+    grid-template-rows: minmax(88px, auto) minmax(44px, auto);
     grid-template-columns: auto auto auto max-content;
     width: 100%;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 0.75fr 1.25fr;
+    grid-template-columns: 220px 200px 210px 150px 270px;
   }
 }
 
@@ -126,16 +126,6 @@
   @media (min-width: @tablet-width) {
     margin-left: 0;
     justify-content: center;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: -5px;
-      top: 0;
-      height: 100%;
-      border-left: 1px solid @color-lines;
-    }
   }
 
   &:hover path {
@@ -163,6 +153,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
+    gap: 12px;
   }
 
   &:hover {
@@ -177,6 +168,7 @@
 .main-navigation__logo {
   display: flex;
   justify-content: center;
+  height: 80px;
 
   @media (min-width: @tablet-width) {
     justify-content: start;
@@ -201,6 +193,7 @@
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
+    padding-top: 5px;
   }
 
   &:hover {
@@ -232,6 +225,16 @@
 .main-navigation__form {
   @media (min-width: @tablet-width) {
     grid-row: -1 / -2;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      top: 0;
+      height: 100%;
+      border-left: 1px solid @color-lines;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -243,6 +246,16 @@
   @media (min-width: @tablet-width) {
     grid-column: -2 / -3;
     place-self: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 0;
+      height: 100%;
+      border-left: 1px solid @color-lines;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -254,6 +267,16 @@
   @media (min-width: @tablet-width) {
     grid-column: -1 / -2;
     place-self: end;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 0;
+      height: 100%;
+      border-left: 1px solid @color-lines;
+    }
   }
 }
 
@@ -272,6 +295,7 @@
 .main-navigation__mod-link {
   @media (min-width: @desktop-width) {
     font-size: 15px;
+    min-height: 60px;
   }
 }
 

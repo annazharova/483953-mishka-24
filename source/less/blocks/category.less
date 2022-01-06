@@ -6,11 +6,10 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/1zigzag-fill-desktop.svg");
       background-repeat: repeat-x;
-      background-position-y: 10px;
-      top: 92px;
-      bottom: -1px;
+      top: 100px;
+      bottom: 0;
       width: 100%;
     }
   }
@@ -36,7 +35,7 @@
 
 .category__item {
   background-color: @color-main;
-  padding-left: 36px;
+  padding-left: 30px;
 
   &:last-child {
     background-color: @color-main-dark;
@@ -66,19 +65,25 @@
   font-size: 19px;
   line-height: 24px;
   color: @color-bg;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 113px;
   align-items: center;
   min-height: 103px;
   text-decoration: none;
-  justify-content: space-between;
 }
 
 .category__text {
   width: min-content;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .category__img {
-  padding-right: 35px;
+  justify-self: center;
+  align-self: center;
 }
 
 .category__icon {
