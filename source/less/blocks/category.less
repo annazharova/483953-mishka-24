@@ -6,12 +6,16 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/1zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
-      top: 100px;
+      top: 109px;
       bottom: 0;
       width: 100%;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/zigzag-fill-desktop.svg");
   }
 }
 
@@ -70,6 +74,12 @@
   align-items: center;
   min-height: 103px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+  }
 }
 
 .category__text {
@@ -84,6 +94,10 @@
 .category__img {
   justify-self: center;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+  }
 }
 
 .category__icon {

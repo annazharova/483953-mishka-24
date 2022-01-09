@@ -55,6 +55,10 @@
   display: grid;
   grid-template-columns: 46px auto;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 55px auto;
+  }
 }
 
 .contacts__parameter-name {
@@ -81,6 +85,7 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin-left: 22px;
   }
 }
 
