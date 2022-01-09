@@ -133,6 +133,11 @@
     font-size: 15px;
   }
 
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -223,6 +228,7 @@
 
   @media (min-width: @desktop-width) {
     grid-row: 1 / 2;
+    margin-top: 0;
   }
 }
 
@@ -236,6 +242,10 @@
   @media (min-width: @desktop-width) {
     grid-row: 1 / 2;
     position: relative;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 17px;
+    line-height: 24px;
 
     &::before {
       content: "";
@@ -337,6 +347,10 @@
     justify-content: end;
     align-items: center;
     margin-top: -15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
   }
 }
 

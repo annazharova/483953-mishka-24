@@ -15,7 +15,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/zigzag-fill-desktop.svg");
+    &::after {
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      top: 100px;
+    }
   }
 }
 
