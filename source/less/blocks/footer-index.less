@@ -23,6 +23,16 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+
+    &:hover path {
+      fill: @color-main-dark-hover;
+      opacity: 1;
+    }
+
+    &:active path {
+      fill: @color-main-dark-hover;
+      opacity: 0.3;
+    }
   }
 }
 

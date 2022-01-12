@@ -2,8 +2,13 @@
   padding-top: 38px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/review 1.png");
+    background-image: url("../img/review.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.png");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {

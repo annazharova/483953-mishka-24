@@ -34,14 +34,30 @@
   }
 }
 
-
 .category__item {
   background-color: @color-main;
   padding-left: 36px;
 
   &:last-child {
     background-color: @color-main-dark;
+
+    &:hover {
+      background-color: @color-main-dark-hover;
+    }
   }
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: @color-category-hover;
+  }
+}
+
+.category__item:hover .category__img path {
+  opacity: 0.7;
+}
+
+.category__item:active .category__img path {
+  opacity: 0.3;
 }
 
 .category__link {
@@ -54,8 +70,13 @@
   align-items: center;
   min-height: 103px;
   text-decoration: none;
+  justify-content: space-between;
 }
 
 .category__text {
   width: min-content;
+}
+
+.category__img {
+  padding-right: 35px;
 }
