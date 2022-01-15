@@ -1,6 +1,6 @@
 .form {
-  max-width: 1050px;
-  margin: auto;
+  // max-width: 1050px;
+  // margin: auto;
 }
 
 .form__group {
@@ -18,13 +18,26 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 225px;
+    padding-right: 205px;
+  }
+}
+
+.form__groupe-type {
+  max-width: 1050px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
   }
 }
 
 .form__group-phone .custom-field__input {
   @media (min-width: @tablet-width) {
     width: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 675px;
+    margin-left: 15px;
   }
 }
 
@@ -37,6 +50,11 @@
   @media (min-width: @tablet-width) {
     width: 480px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 675px;
+    margin-left: 15px;
+  }
 }
 
 .form__group-color {
@@ -47,6 +65,10 @@
 .form__group-color .form__title {
   padding-top: 9px;
   padding-left: 23px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 87px;
+  }
 }
 
 .form__group-color .form__item {
@@ -55,14 +77,26 @@
 
 .form__group-color .custom-checkbox__text {
   padding-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 97px;
+  }
 }
 
 .form__group-names {
   padding-top: 65px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
+  }
 }
 
 .form__group-names .form__list {
   padding-left: 4px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 50px;
+  }
 }
 
 .form__group-comments {
@@ -95,7 +129,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 97px;
+    padding-left: 80px;
   }
 
   &--mod {
@@ -134,11 +168,21 @@
     margin-bottom: 0;
     padding-left: 9px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 50px;
+    margin-left: -35px;
+  }
 }
 
 .form__list-color {
   padding-top: 8px;
   margin-bottom: 3px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 55px;
+    padding-top: 3px;
+  }
 }
 
 .form__checkbox {
@@ -181,6 +225,10 @@
 
   @media (min-width: @tablet-width) {
     right: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 30px;
   }
 }
 
@@ -239,7 +287,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 225px;
+    padding-right: 205px;
+    margin-top: 0;
   }
 }
 
@@ -250,6 +299,10 @@
     width: 230px;
     margin-left: 20px;
     margin-top: -20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
   }
 }
 
@@ -274,5 +327,14 @@
     margin-top: 60px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-right: 30px;
+    padding-left: 155px;
+    padding-top: 40px;
+    padding-right: 170px;
   }
 }
