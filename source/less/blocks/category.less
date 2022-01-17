@@ -6,12 +6,18 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
-      background-position-y: 10px;
-      top: 92px;
-      bottom: -1px;
+      top: 109px;
+      bottom: 0;
       width: 100%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      top: 100px;
     }
   }
 }
@@ -36,7 +42,7 @@
 
 .category__item {
   background-color: @color-main;
-  padding-left: 36px;
+  padding-left: 30px;
 
   &:last-child {
     background-color: @color-main-dark;
@@ -66,17 +72,38 @@
   font-size: 19px;
   line-height: 24px;
   color: @color-bg;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 113px;
   align-items: center;
   min-height: 103px;
   text-decoration: none;
-  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+  }
 }
 
 .category__text {
   width: min-content;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .category__img {
-  padding-right: 35px;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+  }
+}
+
+.category__icon {
+  opacity: 0.5;
+  fill: #149080;
 }

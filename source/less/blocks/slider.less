@@ -1,5 +1,3 @@
-// .slider {}
-
 .slider__list {
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
@@ -7,15 +5,15 @@
   }
 }
 
-// .slider__item {}
-
 .slider__arrows {
   display: flex;
+  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     grid-row: 3 / 4;
     grid-column: -1 / -2;
     justify-content: end;
+    padding-bottom: 25px;
   }
 }
 
@@ -28,11 +26,30 @@
   padding: 0;
   cursor: pointer;
 
-  &:hover path {
+  @media (min-width: @tablet-width) {
+    border: none;
+    height: 26px;
+    width: 86px;
+    padding: 18px;
+  }
+
+  &:first-of-type {
+    background-image: url("../img/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-of-type {
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }

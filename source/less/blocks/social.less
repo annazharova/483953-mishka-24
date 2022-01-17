@@ -1,8 +1,8 @@
 .social {
-  padding-top: 25px;
-
   @media (min-width: @tablet-width) {
     padding-top: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -12,21 +12,21 @@
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: min-content min-content min-content;
-  gap: 21px;
   justify-content: center;
   align-items: baseline;
+  margin: 0;
 }
 
 .social__link {
   padding: 20px;
   display: block;
 
-  &:hover path {
+  &:hover .footer-index__icon {
     fill: @color-main-dark-hover;
     opacity: 1;
   }
 
-  &:active path {
+  &:active .footer-index__icon {
     fill: @color-main-dark-hover;
     opacity: 0.3;
   }

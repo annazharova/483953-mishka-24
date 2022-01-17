@@ -1,5 +1,11 @@
 .eco {
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
-  background-position: top 32px left 3px;
+  background-position: top 27px left 9px;
+
+  @media (min-width: @tablet-width) {
+    background-position: top 40px left 9px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }

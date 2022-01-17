@@ -2,37 +2,43 @@
   background-image: url("../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   background-position-y: 0;
-  padding-top: 10px;
-  margin-top: 30px;
+  padding-top: 18px;
+  margin-top: 35px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
     width: 100%;
     padding-bottom: 80px;
+    margin-top: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 195px;
+    padding-left: 225px;
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 30px;
+    padding-top: 50px;
     width: 100%;
     padding-bottom: 90px;
+    margin-top: 70px;
   }
 }
 
 .about-us__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 350px 350px;
   }
 }
 
@@ -41,10 +47,11 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 83px;
+  padding-top: 82px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    padding-top: 98px;
   }
 }
