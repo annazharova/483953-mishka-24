@@ -13,8 +13,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     min-height: 143px;
+    margin-left: -20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    width: 1070px;
   }
 }
 
@@ -23,13 +28,14 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding: 20px;
 
-    &:hover path {
+    &:hover .footer-index__icon {
       fill: @color-main-dark-hover;
       opacity: 1;
     }
 
-    &:active path {
+    &:active .footer-index__icon {
       fill: @color-main-dark-hover;
       opacity: 0.3;
     }
@@ -39,4 +45,12 @@
 .footer-index__logo-image {
   width: 101px;
   height: 34px;
+}
+
+.footer-index__icon {
+  fill: @color-text;
+}
+
+.footer-index__academy {
+  fill: @color-main;
 }

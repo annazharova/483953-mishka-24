@@ -18,8 +18,8 @@
 .custom-checkbox > span::before {
   content: "";
   display: inline-block;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 2px @color-text-light solid;
@@ -32,6 +32,7 @@
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
+    box-sizing: border-box;
   }
 }
 
@@ -39,11 +40,6 @@
   border-color: @color-main;
   background-color: transparent;
 }
-
-// .custom-checkbox > input:active:not(:disabled) + span::before {
-//   border-color: @color-text-light;
-//   opacity: 0.3;
-// }
 
 .custom-checkbox > input:not(:disabled) + span:active::before {
   border-color: @color-text-light-opacity;
@@ -54,7 +50,11 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 17'%3e%3cpath fill='%23000000' d='M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 38px;
+  background-size: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 33px;
+  }
 }
 
 .custom-checkbox > input:disabled + span::before {
@@ -66,4 +66,25 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.custom-checkbox__note {
+  padding-left: 14px;
+  padding-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 21px;
+    padding-top: 0;
+    margin-top: -6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    margin-top: 0;
+  }
 }

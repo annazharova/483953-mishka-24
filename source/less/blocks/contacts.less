@@ -2,7 +2,8 @@
   background-image: url("../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   background-position-y: 0;
-  padding-top: 30px;
+  padding-top: 45px;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/zigzag-line-desktop.svg");
@@ -13,7 +14,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 460px auto;
+    grid-template-columns: 460px 527px;
     grid-template-rows: auto auto auto;
     align-items: end;
     margin: 0 auto;
@@ -21,10 +22,9 @@
     max-width: 1150px;
     box-sizing: border-box;
     padding-right: 30px;
-    padding-left: 80px;
+    padding-left: 110px;
     padding-bottom: 105px;
-    padding-top: 94px;
-
+    padding-top: 87px;
     background-image: url("../img/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -35,7 +35,7 @@
 .contacts__list {
   display: grid;
   grid-template-rows: 40px auto;
-  row-gap: 26px;
+  row-gap: 20px;
   padding-bottom: 62px;
   padding-top: 28px;
 
@@ -47,13 +47,22 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    padding: 0;
+    padding-left: 60px;
+    row-gap: 30px;
+    margin-top: 5px;
+    padding-bottom: 35px;
   }
 }
 
 .contacts__item {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 46px auto;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 55px auto;
+  }
 }
 
 .contacts__parameter-name {
@@ -75,10 +84,12 @@
   font-size: 14px;
   line-height: 30px;
   color: @color-text-light;
+  margin-left: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin-left: 22px;
   }
 }
 
@@ -116,5 +127,9 @@
   @media (min-width: @desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    width: 527px;
+    height: 457px;
+    justify-self: center;
+    align-self: start;
   }
 }
