@@ -68,18 +68,12 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// это собирает иконки в спрайт и удаляет из получающегося файла все свойства fill
+// это собирает иконки в спрайт
 
 const createSprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({inlineSvg: true}))
-    // .pipe(cheerio({
-    //   run: ($) => {
-    //     $('[fill]').removeAttr('fill');
-    //   },
-    //   parserOptions: {xmlMode: true}
-    // }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img/icons'));
 }
