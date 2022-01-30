@@ -12,3 +12,8 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-navigation--closed');
   }
 });
+
+// var svgPic = document.querySelector('.footer-index__icon');
+// alert(svgPic.innerHTML);
+// svgPic.removeAttribute('fill');
+
