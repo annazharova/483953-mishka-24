@@ -239,30 +239,23 @@
 .article__button {
   width: 260px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     width: 292px;
     font-size: 17px;
-  }
-}
-
-.article__button-container {
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: @tablet-width) {
     grid-row: 5 / 6;
     grid-column: 1 / 2;
-    align-items: end;
-    height: fit-content;
     margin: 0;
     align-self: end;
+    justify-self: center;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2 / 3;
-    justify-content: flex-start;
     align-self: flex-start;
-    padding-top: 12px;
   }
 }

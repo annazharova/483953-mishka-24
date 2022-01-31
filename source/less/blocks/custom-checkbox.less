@@ -36,7 +36,8 @@
   }
 }
 
-.custom-checkbox > input:not(:disabled) + span:hover::before {
+.custom-checkbox > input:not(:disabled) + span:hover::before,
+.custom-checkbox__input:focus ~ span::before {
   border-color: @color-main;
   background-color: transparent;
 }

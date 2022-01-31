@@ -36,7 +36,8 @@
   }
 }
 
-.custom-radio > input + span:hover::before {
+.custom-radio > input + span:hover::before,
+.custom-radio__input:focus ~ span::before {
   border-color: @color-main;
 }
 

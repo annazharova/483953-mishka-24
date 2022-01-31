@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body class="page__body">
   <header class="header">
@@ -50,10 +51,10 @@
             </button>
           </li>
           <li class="main-navigation__item main-navigation__new">
-            <a class="main-navigation__link main-navigation__mod-link" href="#"><span class="main-navigation__text">Новые поступления</span></a>
+            <a class="main-navigation__link main-navigation__mod-link" href="new.html"><span class="main-navigation__text">Новые поступления</span></a>
           </li>
           <li class="main-navigation__item main-navigation__sale">
-            <a class="main-navigation__link main-navigation__mod-link " href="#"><span class="main-navigation__text">Распродажа</span></a>
+            <a class="main-navigation__link main-navigation__mod-link " href="sale.html"><span class="main-navigation__text">Распродажа</span></a>
           </li>
           <li class="main-navigation__item main-navigation__delivery">
             <span class="main-navigation__text">Бесплатная доставка по России</span>
@@ -63,25 +64,25 @@
     </nav>
   </header>
   <main class="page__main">
-    <h1 class="title">Каталог товаров</h1>
+    <div class="title">
+      <h1 class="title__text">Каталог товаров</h1>
+    </div>
     <section class="catalog">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="catalog__list">
         <li class="catalog-item">
-          <a class="catalog-item__link-img" href="#">
+          <a class="catalog-item__link-img" href="../hare.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/products/hare-desktop.png 1x, img/products/hare-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/products/hare-tablet.png, img/products/hare-tablet@2x.png 2x">
-              <img class="catalog-item__img" src="img/products/hare.png" srcset="img/products/hare@2x.png 2x" width="260", height="195" alt="">
+              <img class="catalog-item__img" src="img/products/hare.png" srcset="img/products/hare@2x.png 2x" width="260" height="195" alt="">
             </picture>
           </a>
           <div class="catalog-item__text-container">
-            <a class="catalog-item__link-text" href="#">
-              <div class="catalog-item__text-wrap">
-                <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
-                <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
-              </div>
+            <a class="catalog-item__link-text" href="../hare.html">
+              <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
             </a>
+            <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
             <div class="catalog-item__price-wrapper">
               <span class="catalog-item__price">1 200 руб.</span>
               <button class="catalog-item__cart" type="button">
@@ -93,20 +94,18 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a class="catalog-item__link-img" href="#">
+          <a class="catalog-item__link-img" href="../basket.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/products/basket-desktop.png 1x, img/products/basket-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/products/basket-tablet.png, img/products/basket-tablet@2x.png 2x">
-              <img class="catalog-item__img" src="img/products/basket.png" srcset="img/products/basket@2x.png 2x" width="260", height="195" alt="">
+              <img class="catalog-item__img" src="img/products/basket.png" srcset="img/products/basket@2x.png 2x" width="260" height="195" alt="">
             </picture>
           </a>
           <div class="catalog-item__text-container">
-            <a class="catalog-item__link-text" href="#">
-              <div class="catalog-item__text-wrap">
-                <h3 class="catalog-item__title">Корзинка для белья</h3>
-                <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-              </div>
+            <a class="catalog-item__link-text" href="../basket.html">
+              <h3 class="catalog-item__title">Корзинка для белья</h3>
             </a>
+            <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__price-wrapper">
               <span class="catalog-item__price">690 руб.</span>
               <button class="catalog-item__cart" type="button">
@@ -118,20 +117,18 @@
           </div>
         </li>
         <li class="catalog-item">
-          <a class="catalog-item__link-img" href="#">
+          <a class="catalog-item__link-img" href="../toys-basket.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/products/toys-basket-desktop.png 1x, img/products/toys-basket-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/products/toys-basket-tablet.png, img/products/toys-basket-tablet@2x.png 2x">
-              <img class="catalog-item__img" src="img/products/toys-basket.png" srcset="img/products/toys-basket@2x.png 2x" width="260", height="195" alt="">
+              <img class="catalog-item__img" src="img/products/toys-basket.png" srcset="img/products/toys-basket@2x.png 2x" width="260" height="195" alt="">
             </picture>
           </a>
           <div class="catalog-item__text-container">
-            <a class="catalog-item__link-text" href="#">
-              <div class="catalog-item__text-wrap">
-                <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
-                <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
-              </div>
+            <a class="catalog-item__link-text" href="../toys-basket.html">
+              <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
             </a>
+            <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__price-wrapper">
               <span class="catalog-item__price">1 500 руб.</span>
               <button class="catalog-item__cart" type="button">
@@ -149,10 +146,10 @@
       <div class="video__container">
         <picture>
           <source media="(min-width: 1150px)" type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2">
-          <source class="video__image" type="image/webp" src="img/video.webp" srcset="img/video@2x.webp 2x" alt="Вязаная корзинка">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
           <img class="video__image" src="img/video.png" srcset="img/video@2x.png 2x" alt="Вязаная корзинка">
         </picture>
         <button class="video__button" type="button">
@@ -202,19 +199,19 @@
           </li>
         </ul>
       </section>
-      <div class="academy__container">
-        <a class="academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p>Разработано <span class="visually-hidden">в HTMLAcademy.</span></p>
-            <svg class="footer-index__academy" width="27" height="34">
+            <svg class="academy__img" width="27" height="34">
               <use href="img/icons/sprite.svg#htmlacademy"></use>
             </svg>
         </a>
       </div>
     </div>
   </footer>
-  <div class="modal__container">
+  <div class="modal">
     <section class="modal__content">
-      <h2 class="modal__title">Добавить в корзину</h2>
+      <h3 class="modal__title">Добавить в корзину</h3>
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="modal__fieldset">
           <legend class="modal__legend">Выберите размер:</legend>

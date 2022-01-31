@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body class="page__body">
   <header class="header">
@@ -63,8 +64,8 @@
     </nav>
   </header>
   <main class="page__main">
-    <div class="title-index__wrapper">
-      <h1 class="title__index container">Милые штуки ручной работы для дома</h1>
+    <div class="title-index">
+      <h1 class="title-index__text container">Милые штуки ручной работы для дома</h1>
     </div>
     <section class="category">
       <h2 class="visually-hidden">Виды товаров</h2>
@@ -124,7 +125,7 @@
         </picture>
       </div>
       <p class="article__price">Цена: <span>990 руб.</span></p>
-      <p class="article__button-container"><button class="article__button button" type="button">Заказать</button></p>
+      <button class="article__button button" type="button">Заказать</button>
     </article>
     <section class="about-us container">
       <h2 class="subtitle">Коротко о нас:</h2>
@@ -160,7 +161,7 @@
           </button>
         </div>
         <div class="reviews__button-container">
-          <a class="reviews__button button" href="#">Написать</a>
+          <a class="reviews__button button" href="add-review.html">Написать</a>
         </div>
       </div>
     </section>
@@ -184,10 +185,10 @@
           </dd>
         </div>
       </dl>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258683!2d30.320853351719368!3d59.93871648178728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1638125156685!5m2!1sru!2sde" allowfullscreen="" loading="lazy"></iframe>
-      <div class="container center">
-        <a class="write-us button" href="#">Напишите нам</a>
+      <div class="contacts__map">
+        <iframe class="contacts__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258683!2d30.320853351719368!3d59.93871648178728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1638125156685!5m2!1sru!2sde" allowfullscreen="" loading="lazy"></iframe>
       </div>
+      <a class="write-us button" href="write-us.html">Напишите нам</a>
     </section>
   </main>
   <footer class="footer-index">
@@ -226,16 +227,47 @@
           </li>
         </ul>
       </section>
-      <div class="academy__container">
-        <a class="academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p>Разработано <span class="visually-hidden">в HTMLAcademy.</span></p>
-            <svg class="footer-index__academy" width="27" height="34">
+            <svg class="academy__img" width="27" height="34">
               <use href="img/icons/sprite.svg#htmlacademy"></use>
             </svg>
         </a>
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <section class="modal__content">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="modal__fieldset">
+          <legend class="modal__legend">Выберите размер:</legend>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__radio">
+                <input type="radio" name="size" value="s" checked>
+                <span class="modal__text">S</span>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__radio">
+                <input type="radio" name="size" value="m">
+                <span class="modal__text">M</span>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__radio">
+                <input type="radio" name="size" value="l">
+                <span class="modal__text">L</span>
+              </label>
+            </li>
+          </ul>
+          <button class="modal__button" type="submit">Добавить</button>
+        </fieldset>
+      </form>
+    </section>
+  </div>
   <script src="js/script.js"></script>
   </body>
 </html>

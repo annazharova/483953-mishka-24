@@ -1,4 +1,16 @@
 .academy {
+  padding-top: 15px;
+  padding-bottom: 23px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.academy__link {
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
@@ -10,24 +22,12 @@
   text-decoration: none;
   color: @color-text;
 
-  &:hover .footer-index__academy {
+  &:hover .academy__img {
     fill: @color-main-dark-hover;
   }
 
-  &:active .footer-index__academy {
+  &:active .academy__img {
     fill: @color-main-dark-hover;
     opacity: 0.3;
-  }
-}
-
-.academy__container {
-  padding-top: 15px;
-  padding-bottom: 23px;
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    margin-bottom: 10px;
   }
 }

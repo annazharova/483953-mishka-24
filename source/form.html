@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body class="page__body">
   <header class="header">
@@ -63,7 +64,9 @@
     </nav>
   </header>
   <main class="page__main">
-    <h1 class="title title__form">Вязание на заказ</h1>
+    <div class="title">
+      <h1 class="title__text">Вязание на заказ</h1>
+    </div>
     <section class="form">
       <h2 class="visually-hidden">Форма заказа</h2>
       <p class="lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -151,8 +154,8 @@
         </fieldset>
         <fieldset class="form__group form__group-phone highlight">
           <legend class="form__title form__title--mod form__title-phone">Тел</legend>
-          <div class="form__item--mod">
-            <label class="custom__field">
+          <div class="form__item form__item--mod">
+            <label class="custom-field">
               <input class="custom-field__input highlight__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ" required>
             </label>
               <svg class="form__icon" width="25" height="24">
@@ -162,8 +165,8 @@
         </fieldset>
         <fieldset class="form__group form__group-email highlight">
           <legend class="form__title form__title--mod form__title-short">E-mail</legend>
-          <div class="form__item--mod">
-            <label class="custom__field">
+          <div class="form__item form__item--mod">
+            <label class="custom-field">
               <input class="custom-field__input highlight__input" type="email" name="email" placeholder="Ваш Email" required>
             </label>
             <svg class="form__icon" width="32" height="21">
@@ -173,15 +176,15 @@
         </fieldset>
         <fieldset class="form__group form__group-comments">
           <legend class="form__title form__title--mod">Доп</legend>
-          <div class="form__item--mod">
-            <label class="custom__field">
+          <div class="form__item form__item--mod">
+            <label class="custom-field">
               <textarea class="custom-field__textarea" name="comment"  placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </div>
         </fieldset>
         <p class="form__note">*Поля обязательны для заполнения</p>
         <div class="form__button-container center">
-          <button class="form__button button" type="button">Отправить заказ</button>
+          <button class="form__button button" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>
@@ -222,10 +225,10 @@
           </li>
         </ul>
       </section>
-      <div class="academy__container">
-        <a class="academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p>Разработано <span class="visually-hidden">в HTMLAcademy.</span></p>
-            <svg class="footer-index__academy" width="27" height="34">
+            <svg class="academy__img" width="27" height="34">
               <use href="img/icons/sprite.svg#htmlacademy"></use>
             </svg>
         </a>
