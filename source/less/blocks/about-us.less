@@ -31,14 +31,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 675px;
+    column-gap: 55px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 350px 350px;
+    // grid-template-columns: 350px 350px;
   }
 }
 
@@ -53,5 +57,7 @@
     font-size: 20px;
     line-height: 22px;
     padding-top: 98px;
+    max-width: 295px;
+    flex: 1 1 50%;
   }
 }

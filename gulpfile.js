@@ -11,7 +11,6 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import cheerio from 'gulp-cheerio';
 import del from 'del';
 
 // Styles
